@@ -24,9 +24,24 @@
 *.lai
 *.la
 *.a
+!liballoc431.a
 *.lib
 
 # Executables
 *.exe
 *.out
 *.app
+
+lock_free_stack_correctness
+lock_free_stack_throughput
+
+non_blocking_queue_correctness
+non_blocking_queue_throughput
+
+one_lock_queue_correctness
+one_lock_queue_throughput
+one_lock_stack_correctness
+one_lock_stack_throughput
+
+two_lock_queue_correctness
+two_lock_queue_throughput
