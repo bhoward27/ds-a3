@@ -1,6 +1,7 @@
 #compiler setup
 CXX = g++
-CXXFLAGS = -std=c++14 -march=native -pthread -O3 
+# TODO: Add this back in -> CXXFLAGS = -std=c++14 -march=native -pthread -O3
+CXXFLAGS = -std=c++14 -march=native -pthread -g -Wall -Werror -Wno-error=unused-variable -Wno-error=sign-compare
 LDFLAGS = -Llib -lalloc431 -lpthread
 
 THROUGHPUT=one_lock_queue_throughput two_lock_queue_throughput non_blocking_queue_throughput one_lock_stack_throughput lock_free_stack_throughput
